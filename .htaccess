@@ -1,0 +1,34 @@
+<IfModule mod_rewrite.c>
+   Options +FollowSymlinks
+   RewriteEngine On
+
+   RewriteCond %{REQUEST_URI} ^/(img|css|js|plugins)
+   RewriteRule ^img/(.*)$ static/img/$1 [L]
+   RewriteRule ^css/(.*)$ static/css/$1 [L]
+   RewriteRule ^js/(.*)$ static/js/$1 [L]
+   RewriteRule ^plugins/(.*)$ static/plugins/$1 [L]
+
+   RewriteCond %{REQUEST_URI} !^/public/(css|js|images|plugins)/
+   RewriteCond %{REQUEST_URI} !index.php
+   RewriteCond %{REQUEST_FILENAME} !-f [OR]
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule ^(.*)$ index.php
+</IfModule>
+
+## Кеширование ##
+
+#AddType image/svg+xml svg svgz
+#AddEncoding gzip svgz
+#AddEncoding x-gzip .svgz
+
+## Компрессия ##
+#<ifModule mod_gzip.c>
+#    mod_gzip_on Yes
+#    mod_gzip_dechunk Yes
+#    mod_gzip_item_include file .(html?|txt|css|js|svg|php|pl)$
+#    mod_gzip_item_include handler ^cgi-script$
+#    mod_gzip_item_include mime ^text/.*
+#    mod_gzip_item_include mime ^application/x-javascript.*
+#    mod_gzip_item_include mime ^image/svg+xml.*
+#    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+#</ifModule>

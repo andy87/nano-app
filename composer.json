@@ -1,0 +1,12 @@
+{
+  "name": "andy87/nano-app",
+  "type": "app",
+  "description": "App template on PHP framework 'nano' v1",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=9.5.26"
+  }
+}
