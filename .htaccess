@@ -9,10 +9,10 @@
    RewriteRule ^plugins/(.*)$ static/plugins/$1 [L]
 
    RewriteCond %{REQUEST_URI} !^/public/(css|js|images|plugins)/
-   RewriteCond %{REQUEST_URI} !index.php
+   RewriteCond %{REQUEST_URI} !nano.php
    RewriteCond %{REQUEST_FILENAME} !-f [OR]
    RewriteCond %{REQUEST_FILENAME} !-d
-   RewriteRule ^(.*)$ index.php
+   RewriteRule ^(.*)$ nano.php
 </IfModule>
 
 ## Кеширование ##
