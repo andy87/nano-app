@@ -8,8 +8,6 @@ use nano\Components\Web\Controllers\Action;
 
 // Настройки
 
-if ( defined('DS') ) define('DS', DIRECTORY_SEPARATOR);
-
 return [
     COMPONENTS => [
         APP => App::class,
