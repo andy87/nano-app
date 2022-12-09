@@ -1,12 +1,14 @@
 <?php
 
 use nano\Components\Web\App;
+use nano\Components\Web\View;
+use nano\Components\Web\Request;
 use nano\Components\Web\Controller;
 use nano\Components\Web\Controllers\Action;
-use nano\Components\Web\Request;
-use nano\Components\Web\View;
 
 // Настройки
+
+if ( defined('DS') ) define('DS', DIRECTORY_SEPARATOR);
 
 return [
     COMPONENTS => [
@@ -17,10 +19,10 @@ return [
         CONTROLLER => Controller::class,
     ],
     DIR => [
+        CONFIG => ROOT  . DS . 'config',
         CONTROLLER => ROOT  . DS . 'controller',
         VIEW => ROOT  . DS . 'views',
         LAYOUT => ROOT  . DS . 'views' . DS . '_layouts',
-        CONFIG => ROOT  . DS . 'config',
     ],
     ROUTS => [
         'example/' => 'site/example'
