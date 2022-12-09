@@ -1,10 +1,8 @@
 <?php
 
-use and_y87\nano\Nano;
+include "vendor/autoload.php";
 
 const DS = DIRECTORY_SEPARATOR;
 const ROOT = __DIR__;
 
-$config = require "config/main.php";
-
-Nano::init($config)->run();
+framework\Nano::init( require "config/main.php" )->run();

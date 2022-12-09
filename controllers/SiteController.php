@@ -1,8 +1,8 @@
 <?php
 
-namespace app\controllers;
+namespace nano\controllers;
 
-use and_y87\nano\components\app\Controller;
+use nano\components\web\Controller;
 
 /**
  *
@@ -11,10 +11,10 @@ class SiteController extends Controller
 {
     /**
      * action `endex`
-     * @return void
+     * @return string
      */
-    public function index()
+    public function index(): string
     {
-        return $this->render();
+        return $this->render('', []);
     }
 }

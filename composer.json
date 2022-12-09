@@ -4,6 +4,20 @@
   "description": "App template on PHP framework 'nano' v1",
   "license": "MIT",
   "require": {
-    "php": ">=8.0"
-  }
+    "php": ">=8.0",
+    "andy87/nano-framework" : "master"
+  },
+  "repositories": [
+    {
+      "url": "git@github.com:andy87/nano-framework.git",
+      "type": "vcs"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": ""
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

@@ -5,5 +5,5 @@
  * @var string $content
  */
 
-use and_y87\nano\components\app\View;
+use andy87\nano\components\app\View;
 

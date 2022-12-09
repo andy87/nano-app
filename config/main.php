@@ -1,10 +1,10 @@
 <?php
 
-use and_y87\nano\components\App;
-use and_y87\nano\components\app\Request;
-use and_y87\nano\components\app\View;
-use and_y87\nano\components\controllers\Action;
-use and_y87\nano\components\app\Controller;
+use andy87\nano\components\App;
+use andy87\nano\components\app\Request;
+use andy87\nano\components\app\View;
+use andy87\nano\components\controllers\Action;
+use andy87\nano\components\app\Controller;
 
 
 // Настройки
