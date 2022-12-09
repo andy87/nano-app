@@ -5,10 +5,12 @@ use nano\Components\Web\View;
 use nano\Components\Web\Request;
 use nano\Components\Web\Controller;
 use nano\Components\Web\Controllers\Action;
+use nano\Interfaces\Core\Enums\Env;
 
 // Настройки
 
 return [
+    ENV => Env::LOCAL,
     COMPONENTS => [
         APP => App::class,
         VIEW => View::class,

@@ -1,0 +1,19 @@
+@echo off
+
+rem -------------------------------------------------------------
+rem  Nano command line for Windows.
+rem  @author Kidin and_y87 Andrey <qiang.xue@gmail.com>
+rem  @link http://www.nano-php-framework.com/
+rem  @copyright Copyright (c) 2022
+rem  @license http://www.nano-php-framework.com/license/
+rem -------------------------------------------------------------
+
+@setlocal
+
+set YII_PATH=%~dp0
+
+if "%PHP_COMMAND%" == "" set PHP_COMMAND=php.exe
+
+"%PHP_COMMAND%" "%YII_PATH%cli" %*
+
+@endlocal
