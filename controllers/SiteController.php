@@ -1,6 +1,6 @@
 <?php
 
-namespace nano\controllers;
+namespace app\controllers;
 
 use nano\components\web\Controller;
 
