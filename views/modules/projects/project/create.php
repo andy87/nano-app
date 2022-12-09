@@ -8,6 +8,8 @@ use nano\Components\Web\View;
  * @var string $method
  */
 
+echo $this->render('_frame');
+echo $this->render(View::DIR . '/_common/blackBox');
 ?>
 
 <br> __FILE__ : <?= __FILE__ ?>
