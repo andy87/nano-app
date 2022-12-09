@@ -14,6 +14,6 @@ function printPre($data)
 
 
 
-require [
-
+return [
+    'file' => __FILE__
 ];

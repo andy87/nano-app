@@ -1,23 +1,24 @@
 <?php
 
-namespace app\controllers\web;
+namespace app\controllers\web\inside;
 
 use nano\components\web\Controller;
 use nano\Components\Web\Exceptions\TemplateException;
 
 /**
- *  class `SiteController`
+ *  class `MainController`
  */
-class SiteController extends Controller
+class MainController extends Controller
 {
     /**
-     * action `index`
+     * action `view`
+     *
      * @return string
      * @throws TemplateException
      */
-    public function index(): string
+    public function view(): string
     {
-        return $this->render('index', [
+        return $this->render('view', [
             'class' => __CLASS__,
             'method' => __METHOD__,
         ]);

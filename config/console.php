@@ -1,5 +1,5 @@
 <?php
 
-require [
-
+return [
+    'file' => __FILE__
 ];

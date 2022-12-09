@@ -1,23 +1,22 @@
 <?php
 
-namespace app\controllers\web;
+namespace app\controllers\web\modules\projects;
 
-use nano\components\web\Controller;
+use nano\Components\Web\Controller;
 use nano\Components\Web\Exceptions\TemplateException;
 
 /**
- *  class `SiteController`
+ *
  */
-class SiteController extends Controller
+class ProjectController extends Controller
 {
     /**
-     * action `index`
      * @return string
      * @throws TemplateException
      */
-    public function index(): string
+    public function create(): string
     {
-        return $this->render('index', [
+        return $this->render('create', [
             'class' => __CLASS__,
             'method' => __METHOD__,
         ]);
