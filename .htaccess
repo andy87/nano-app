@@ -3,11 +3,11 @@
    RewriteEngine On
 
    RewriteCond %{REQUEST_URI} ^/(img|css|js)
-   RewriteRule ^img/(.*)$ public/img/$1 [L]
-   RewriteRule ^css/(.*)$ public/css/$1 [L]
-   RewriteRule ^js/(.*)$ public/js/$1 [L]
+   RewriteRule ^img/(.*)$ static/img/$1 [L]
+   RewriteRule ^css/(.*)$ static/css/$1 [L]
+   RewriteRule ^js/(.*)$ static/js/$1 [L]
 
-   RewriteCond %{REQUEST_URI} !^/public/(img|css|js)/
+   RewriteCond %{REQUEST_URI} !^/static/(img|css|js)/
    RewriteCond %{REQUEST_URI} !endpoint.php
    RewriteCond %{REQUEST_FILENAME} !-f [OR]
    RewriteCond %{REQUEST_FILENAME} !-d
