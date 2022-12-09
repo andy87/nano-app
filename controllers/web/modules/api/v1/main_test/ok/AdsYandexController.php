@@ -9,6 +9,21 @@ class AdsYandexController extends Controller
 {
     /**
      *
+     * modules/api/v1/main-test/ok/ads-yandex/
+     *
+     * @return string
+     * @throws TemplateException
+     */
+    public function index(): string
+    {
+        return $this->render('index', [
+            'class' => __CLASS__,
+            'method' => __METHOD__,
+        ]);
+    }
+
+    /**
+     *
      * modules/api/v1/main-test/ok/ads-yandex/create
      *
      * @return string
