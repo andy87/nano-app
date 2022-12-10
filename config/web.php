@@ -10,7 +10,6 @@ use nano\Interfaces\Core\Enums\Env;
 // Настройки
 
 return [
-    'file' => __FILE__,
     ENV => Env::LOCAL,
     COMPONENTS => [
         APP => App::class,
@@ -24,8 +23,5 @@ return [
         CONTROLLER => ROOT  . DS . 'controller',
         VIEW => ROOT  . DS . 'views',
         LAYOUT => ROOT  . DS . 'views' . DS . '_layouts',
-    ],
-    ROUTS => [
-        'example/' => 'site/example'
     ]
 ];

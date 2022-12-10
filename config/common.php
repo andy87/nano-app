@@ -15,5 +15,7 @@ function printPre($data)
 
 
 return [
-    'file' => __FILE__
+    NAME_SPACE => [
+        CONTROLLER => 'app\\controllers\\'
+    ]
 ];
