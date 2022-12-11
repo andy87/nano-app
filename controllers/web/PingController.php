@@ -9,16 +9,16 @@ use nano\Interfaces\Web\ResponseInterface;
 /**
  *  class `PingController`
  */
-class CartController extends Controller
+class PingController extends Controller
 {
     /**
-     * @return string
+     * @return array
      */
-    public function index(): string
+    public function index(): array
     {
-        Response::$format = ResponseInterface::FORMAT_RAW;
+        Response::$format = ResponseInterface::FORMAT_JSON;
 
-        return 'pong';
+        return ['pong'];
     }
 
 }
