@@ -8,6 +8,8 @@ use nano\Components\Web\View;
  * @var string $method
  */
 
+echo $this->render('~views/_common/_menu');
+
 ?>
 
 <br> __FILE__ : <?= __FILE__ ?>
