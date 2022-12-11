@@ -1,21 +1,21 @@
 <?php
 
-use nano\Components\Web\View;
-
-include "vendor/autoload.php";
+use \Exception;
 
 const ROOT = __DIR__;
 
 try {
 
-    framework\Nano::init(array_merge(
-        require "config/common.php",
-        require "config/web.php"
-    ))->run();
+    $x = 1/0;
 
-} catch (Exception $e ) {
+    include ROOT . "/vendor/autoload.php";
 
-    View::display( __DIR__ . '/views/_common/catch', [
-        'e' => $e
-    ]);
+    framework\Nano::init([
+        require ROOT . "/config/common.php",
+        require ROOT . "/config/web.php"
+    ])->run();
+
+} catch ( Exception $e ) {
+
+    echo $e->getMessage();
 }

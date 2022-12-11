@@ -5,12 +5,12 @@ use nano\Components\Web\View;
 use nano\Components\Web\Request;
 use nano\Components\Web\Controller;
 use nano\Components\Web\Controllers\Action;
-use nano\Interfaces\Core\Enums\Env;
+use nano\Interfaces\Core\Enums\Environment;
 
 // Настройки
 
 return [
-    ENV => Env::LOCAL,
+    ENV => Environment::LOCAL,
     COMPONENTS => [
         APP => App::class,
         VIEW => View::class,
@@ -18,10 +18,7 @@ return [
         REQUEST => Request::class,
         CONTROLLER => Controller::class,
     ],
-    DIR => [
-        CONFIG => ROOT  . DS . 'config',
-        CONTROLLER => ROOT  . DS . 'controller',
-        VIEW => ROOT  . DS . 'views',
-        LAYOUT => ROOT  . DS . 'views' . DS . '_layouts',
+    CONTROLLER => [
+        NS => 'app\\controllers\\web\\',
     ]
 ];

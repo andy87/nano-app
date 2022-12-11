@@ -9,7 +9,7 @@ use nano\Interfaces\Web\ResponseInterface;
 /**
  *  class `PingController`
  */
-class PingController extends Controller
+class CartController extends Controller
 {
     /**
      * @return string
@@ -20,4 +20,5 @@ class PingController extends Controller
 
         return 'pong';
     }
+
 }
