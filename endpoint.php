@@ -1,7 +1,5 @@
 <?php
 
-use \Exception;
-
 const ROOT = __DIR__;
 
 try {
