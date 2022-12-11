@@ -6,8 +6,6 @@ const ROOT = __DIR__;
 
 try {
 
-    $x = 1/0;
-
     include ROOT . "/vendor/autoload.php";
 
     framework\Nano::init([
@@ -17,5 +15,5 @@ try {
 
 } catch ( Exception $e ) {
 
-    echo $e->getMessage();
+    echo 'Nano `fatal` error :' . $e->getMessage();
 }
