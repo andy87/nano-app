@@ -20,5 +20,9 @@ return [
     ],
     CONTROLLER => [
         NS => 'app\\controllers\\web\\',
-    ]
+    ],
+    TPL => [
+        CATCH_ => '~views/_common/catch',
+        LAYOUT => '~views/_layouts/wrapper'
+    ],
 ];

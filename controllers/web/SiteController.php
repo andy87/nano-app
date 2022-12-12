@@ -13,7 +13,6 @@ class SiteController extends Controller
     /**
      * action `index`
      * @return string
-     * @throws TemplateException
      */
     public function index(): string
     {

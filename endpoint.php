@@ -13,5 +13,5 @@ try {
 
 } catch ( Exception $e ) {
 
-    echo 'Nano `fatal` error :' . $e->getMessage();
+    echo '<h2>Nano  exception.</h2><hr>' . $e->getMessage();
 }
