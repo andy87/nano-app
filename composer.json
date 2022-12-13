@@ -12,10 +12,6 @@
     {
       "url": "git@github.com:andy87/nano-framework.git",
       "type": "vcs"
-    },
-    {
-      "url": "git@github.com:andy87/curl-requester.git",
-      "type": "vcs"
     }
   ],
   "autoload": {
