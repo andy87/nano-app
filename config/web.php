@@ -6,6 +6,7 @@ use nano\Components\Web\Request;
 use nano\Components\Web\Response;
 use nano\Components\Web\Controller;
 use nano\Components\Web\Controllers\Action;
+use nano\Interfaces\Core\Enums\Charset;
 use nano\Interfaces\Web\ResponseInterface;
 
 // Настройки
@@ -18,6 +19,10 @@ return [
         REQUEST => Request::class,
         RESPONSE => Response::class,
         CONTROLLER => Controller::class,
+    ],
+    VIEW => [
+        TITLE => 'php framework `Nano` v1 ',
+        CHARSET => Charset::UTF_8,
     ],
     RESPONSE => [
         FORMAT => ResponseInterface::FORMAT_HTML

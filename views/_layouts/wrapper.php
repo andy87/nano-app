@@ -12,7 +12,7 @@ use nano\Components\Web\View;
 <!DOCTYPE HTML>
 <html lang="ru">
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="<?= View::$charset ?>"/>
         <title><?= View::$title ?></title>
         <!--link href="/css/styles.css" rel="stylesheet"-->
     </head>
