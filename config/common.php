@@ -2,25 +2,15 @@
 
 use nano\Components\Core\App;
 use nano\Components\Core\Request;
+use nano\Components\Core\Response;
 use nano\Components\Core\Controller;
 use nano\Components\Core\Controllers\Action;
-use nano\Interfaces\Core\ResponseInterface;
-
-/**
- * @param $data
- * @return void
- */
-function printPre($data)
-{
-    if ( !is_array($data) && !is_object($data)) $data = ['$data' => $data];
-    echo '<pre>';
-    print_r($data);
-    exit();
-}
+use nano\Interfaces\Core\Enums\Environment;
 
 // Настройки
 
 return [
+    ENV => Environment::LOCAL,
     DIR => [
         CONFIG => ROOT  . DS . 'config',
         CONTROLLER => ROOT  . DS . 'controller' . DS . 'web',
@@ -31,6 +21,7 @@ return [
         APP => App::class,
         ACTION => Action::class,
         REQUEST => Request::class,
+        RESPONSE => Response::class,
         CONTROLLER => Controller::class,
     ],
     CONTROLLER => [

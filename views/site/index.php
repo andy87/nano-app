@@ -7,7 +7,5 @@ use nano\Components\Web\View;
  * @var string $method
  */
 
-echo $this->render('~views/_common/info', [
-    'file' => __FILE__,
-    'method' => $method,
-]);
+echo "<br><b>__FILE__:</b> " . __FILE__;
+echo "<br><b>Method:</b> $method";
