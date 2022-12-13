@@ -4,7 +4,7 @@ namespace app\controllers\web;
 
 use nano\Components\Web\Controller;
 use nano\Components\Web\Response;
-use nano\Interfaces\Web\ResponseInterface;
+use nano\Interfaces\Core\ResponseInterface;
 
 /**
  *  class `PingController`
@@ -12,13 +12,13 @@ use nano\Interfaces\Web\ResponseInterface;
 class PingController extends Controller
 {
     /**
-     * @return array
+     * @return string
      */
-    public function index(): array
+    public function index(): string
     {
-        Response::$format = ResponseInterface::FORMAT_JSON;
+        Response::setupFormat(ResponseInterface::FORMAT_RAW);
 
-        return ['pong'];
+        return 'pong';
     }
 
 }

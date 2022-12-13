@@ -6,6 +6,7 @@ use nano\Components\Web\Request;
 use nano\Components\Web\Controller;
 use nano\Components\Web\Controllers\Action;
 use nano\Interfaces\Core\Enums\Environment;
+use nano\Interfaces\Web\ResponseInterface;
 
 // Настройки
 
@@ -17,6 +18,9 @@ return [
         ACTION => Action::class,
         REQUEST => Request::class,
         CONTROLLER => Controller::class,
+    ],
+    RESPONSE => [
+        FORMAT => ResponseInterface::FORMAT_HTML
     ],
     CONTROLLER => [
         NS => 'app\\controllers\\web\\',

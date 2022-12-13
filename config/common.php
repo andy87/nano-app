@@ -4,6 +4,7 @@ use nano\Components\Core\App;
 use nano\Components\Core\Request;
 use nano\Components\Core\Controller;
 use nano\Components\Core\Controllers\Action;
+use nano\Interfaces\Core\ResponseInterface;
 
 /**
  * @param $data

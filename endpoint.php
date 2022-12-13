@@ -6,7 +6,7 @@ try {
 
     include ROOT . "/vendor/autoload.php";
 
-    framework\Nano::init([
+    framework\Nano::load([
         require ROOT . "/config/common.php",
         require ROOT . "/config/web.php"
     ])->run();
