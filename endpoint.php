@@ -6,12 +6,12 @@ try {
 
     include ROOT . "/vendor/autoload.php";
 
-    framework\Nano::load([
+    framework\Nano::setup([
         require ROOT . "/config/common.php",
         require ROOT . "/config/web.php"
     ])->run();
 
-} catch ( Exception $e ) {
+} catch ( Exception $e ) { ?>
 
-    echo '<h2>Nano  exception.</h2><hr>' . $e->getMessage();
-}
+    <h2>Nano  exception.</h2><hr>
+    <?= $e->getMessage(); }

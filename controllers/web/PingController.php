@@ -12,6 +12,8 @@ use nano\Interfaces\Core\ResponseInterface;
 class PingController extends Controller
 {
     /**
+     * @url /ping/
+     *
      * @return string
      */
     public function index(): string
@@ -21,4 +23,15 @@ class PingController extends Controller
         return 'pong';
     }
 
+    /**
+     * @url /ping/as-json
+     *
+     * @return array
+     */
+    public function as_json(): array
+    {
+        Response::$format = Response::FORMAT_JSON;
+
+        return ['pong'];
+    }
 }

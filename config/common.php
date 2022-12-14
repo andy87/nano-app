@@ -13,7 +13,7 @@ return [
     ENV => Environment::LOCAL,
     DIR => [
         CONFIG => ROOT  . DS . 'config',
-        CONTROLLER => ROOT  . DS . 'controller' . DS . 'web',
+        CONTROLLER => ROOT  . DS . 'controller',
         VIEW => ROOT  . DS . 'views',
         LAYOUT => ROOT  . DS . 'views' . DS . '_layouts',
     ],
