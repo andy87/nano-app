@@ -8,8 +8,7 @@
 ### 🔌 Setup.  
 
 #### 1. Repository  
-Using a console/terminal with git & php support  
-Move to the project directory.  
+Using a console/terminal with git & php support move to the project directory.  
 Execute the `clone` console command:  
 ⌨ `git clone git@github.com:andy87/nano-app.git .`  
 
