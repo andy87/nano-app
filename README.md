@@ -22,3 +22,34 @@ Execute the console command:
 | ⌨ `composer install` | ⌨ `php composer.phar install` |
 
 __________
+
+#### 2. Using  
+
+##### Custom controllers.
+Create you `controller` in the directory `Nano::$config[DIR][VIEWS]`
+ * Default: `/controllers/web/`
+Extend you controller by class: `nano/components/web/Controller::class`
+
+```php
+namespace app/controllers;
+
+class YouController extend nano/components/web/Controller {
+
+}
+```
+
+##### Custom actions.
+Create you `action` in the you controller winth config 
+prefix `Nano::$config[ACTION][PREFIX]`
+ * Default: ''
+ prefix `Nano::$config[ACTION][SUFIX]`
+ * Default: ''
+
+```php
+namespace app/controllers;
+
+class YouController extend nano/components/web/Controller {
+  public function index(){}
+}
+##### You can create actions component.
+ 
