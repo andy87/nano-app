@@ -38,12 +38,12 @@ class YouController extend nano/components/web/Controller {
 }
 ```
 
-##### Custom actions.
-Create you `action` in the you controller winth config 
-prefix `Nano::$config[ACTION][PREFIX]`
- * Default: none
- prefix `Nano::$config[ACTION][SUFIX]`
- * Default: none
+##### Custom actions.  
+Create you `action` in the you controller winth config  
+prefix `Nano::$config[ACTION][PREFIX]`  
+ * Default: none  
+ prefix `Nano::$config[ACTION][SUFIX]`  
+ * Default: none  
 
 ```php
 namespace app/controllers;
