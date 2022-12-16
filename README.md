@@ -1,6 +1,9 @@
-<p align='center'><img align='center' src="https://github.com/andy87/nano-framework/raw/master/Docs/background.jpg" style="max-width: 100%;"></p>
+<p align='center'>
+  <img align='center' src="https://github.com/andy87/nano-framework/raw/master/Docs/background.jpg" style="max-width: 100%;">+
+  <h1 align='center'> App template on PHP framework `<a href="https://github.com/andy87/nano-framework">Nano<a/>` v1 </h1>
+</p>
 
-<h1> App template on PHP framework \`<a href="https://github.com/andy87/nano-framework">Nano<a/>\` v1 </h1>
+
 
 ### 🔌 Setup.  
 
