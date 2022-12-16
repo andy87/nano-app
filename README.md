@@ -24,5 +24,5 @@ Execute the console command:
 __________
 
 ### 3. Job
-* <a href="/docs/en/guide.md">Follow guide and have fun</a>
-* or read <a href="/docs/en/">documentation</a>
+* <a href="docs/en/guide.md">Follow guide and have fun</a>
+* or read <a href="docs/en/">documentation</a>
