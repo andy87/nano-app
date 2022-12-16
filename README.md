@@ -1,21 +1,21 @@
-# App template on PHP framework 'nano' v1
+<img align='center' src="https://github.com/andy87/nano-framework/raw/master/Docs/background.jpg" style="max-width: 100%;">
 
-# 🔌 Setup.  
+<h1> App template on PHP framework \`<a href="https://github.com/andy87/nano-framework">Nano<a/>\` v1 </h1>
 
-### 1. SCV  
-1.1 With console go to directory when you want download app  
-1.2 exec command:  
-⌨ `git clone git@github.com:andy87/nano-app.git`  
+### 🔌 Setup.  
 
-### 2. Required  
+#### 1. Repository  
+Using a console/terminal with git & php support  
+Move to the project directory.  
+Execute the `clone` console command:  
+⌨ `git clone git@github.com:andy87/nano-app.git .`  
 
-If **composer** local don't install, then download **composer.phar** from 
-<a href="https://getcomposer.org/download/">official homepage</a> to root project directory.  
+#### 2. Required  
+If **composer** local don't install, then download **composer.phar** from the <a href="https://getcomposer.org/download/">official website</a> to the project directory.  
 
-Exec console command, if **composer**:  
-
-| local install      | local dont install          |
-|--------------------|-----------------------------|
-| `composer install` | `php composer.phar install` |
+Execute the console command:  
+| local composer | composer.phar |
+|-----|-----|
+| ⌨ `composer install` | ⌨ `php composer.phar install` |
 
 __________
